@@ -9,16 +9,18 @@ namespace Snake
     class Snake : DrawableShape
     {
         public List<Point> Body;
-        ConsoleKey OldDirection = ConsoleKey.D;
+        ConsoleKey? OldDirection = ConsoleKey.D;
         int PreviousTailPositionX;
         int PreviousTailPositionY;
         public Snake(int x, int y, int length)
         {
             if (length < 4)
                 length = 4;
-            Body = new List<Point>();
-            Body.Add(new Point(x, y, 's',3));
-            Body.Add(new Point(x, y, 'n',2));
+            Body = new List<Point>
+            {
+                new Point(x, y, 's', 3),
+                new Point(x, y, 'n', 2)
+            };
             for (int i = 2; i < length; i++)
             {
                 Body.Add(new Point(x, y, i == length - 1?'k':'e',2));
@@ -49,12 +51,13 @@ namespace Snake
         {
             Move(OldDirection);
         }
-        public void Move(ConsoleKey button)
+        public void Move(ConsoleKey? button)
         {
             if (button == ConsoleKey.W && OldDirection == ConsoleKey.S ||
                    OldDirection == ConsoleKey.W && button == ConsoleKey.S ||
                    button == ConsoleKey.D && OldDirection == ConsoleKey.A ||
-                   OldDirection == ConsoleKey.D && button == ConsoleKey.A)
+                   OldDirection == ConsoleKey.D && button == ConsoleKey.A ||
+                   button == null)
                 button = OldDirection;
             PreviousTailPositionX = Body.Last().x;
             PreviousTailPositionY = Body.Last().y;

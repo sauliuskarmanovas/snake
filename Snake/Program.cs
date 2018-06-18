@@ -27,7 +27,7 @@ namespace Snake
             while (state != GameState.EXIT)
             {
                 int time = -DateTime.Now.Millisecond;
-                ConsoleKey button = default(ConsoleKey);
+                ConsoleKey? button = null;
                 while (Console.KeyAvailable)
                 {
                     button = Console.ReadKey(true).Key;
@@ -55,7 +55,7 @@ namespace Snake
                         }
                         break;
                 }
-                if (button != default(ConsoleKey))
+                if (button != null)
                     DrawScreen();
                 time = +DateTime.Now.Millisecond;
                 if (state != GameState.EXIT)
@@ -111,7 +111,7 @@ namespace Snake
             while (state != GameState.MAIN_MENU)
             {
                 int time = -DateTime.Now.Millisecond;
-                ConsoleKey button = default(ConsoleKey);
+                ConsoleKey? button = null;
                 while (Console.KeyAvailable)
                 {
                     button = Console.ReadKey(true).Key;

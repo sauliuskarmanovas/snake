@@ -5,3 +5,9 @@ C:\Saulius\Programavimas\Snake\Snake\obj\Debug\Snake.csprojResolveAssemblyRefere
 C:\Saulius\Programavimas\Snake\Snake\obj\Debug\Snake.csproj.CoreCompileInputs.cache
 C:\Saulius\Programavimas\Snake\Snake\obj\Debug\Snake.exe
 C:\Saulius\Programavimas\Snake\Snake\obj\Debug\Snake.pdb
+C:\Users\Saulius\Desktop\fonts\snake\Snake\bin\Debug\Snake.exe.config
+C:\Users\Saulius\Desktop\fonts\snake\Snake\bin\Debug\Snake.exe
+C:\Users\Saulius\Desktop\fonts\snake\Snake\bin\Debug\Snake.pdb
+C:\Users\Saulius\Desktop\fonts\snake\Snake\obj\Debug\Snake.csproj.CoreCompileInputs.cache
+C:\Users\Saulius\Desktop\fonts\snake\Snake\obj\Debug\Snake.exe
+C:\Users\Saulius\Desktop\fonts\snake\Snake\obj\Debug\Snake.pdb
